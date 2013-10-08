@@ -23,7 +23,7 @@ public class Client {
             SslContextFactory sslContextFactory = new SslContextFactory(true);
             String separator = FileSystems.getDefault().getSeparator();
 
-            sslContextFactory.setKeyStorePath("certificate"+separator+"PushCertificates"+separator+"talk.to_ca_root.p12"); //Contains client's private and public key pair
+            sslContextFactory.setKeyStorePath("certificate"+separator+"PushCertificates"+separator+"talk.to_ca.p12"); //Contains client's private and public key pair
             sslContextFactory.setKeyStorePassword("directi");
             sslContextFactory.setKeyStoreType("PKCS12");
 //            sslContextFactory.setTrustStorePath(""); // Contains client's public key
